@@ -1,0 +1,7 @@
+//mixins
+@mixin transition($transition){
+  transition:$transition;
+  -webkit-transform:$transition;
+  -moz-transform:$transition;
+  -o-transform:$transition;
+}

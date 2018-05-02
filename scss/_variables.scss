@@ -1,0 +1,38 @@
+//_variables.scss
+
+//importing google font 'Lato'
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Karla');
+
+$logo: url("../images/logo.svg");
+
+$font: 'Lato', sans-serif;  //applied to all text throughout site
+$backup-font: 'Karla', sans-serif;
+
+//colors
+$brand-color: #1dd1a1;
+$alt-color: #3498db;
+$body-color: #69707a;
+$heading-color: #333333;
+$lightgray: #F8F8F8;
+$white: #ffffff;
+
+//full scheme
+$purple: #a29bfe;
+$sunflower: #fdcb6e;
+$red: #ff7675;
+$teal: #00cec9;
+
+//body sizing
+$body-size: 16px;
+$body-line-height: 1.6;
+
+//all transitions
+$transition-fast: 0.2s;
+$transition-slow: 0.6s;
+
+//border
+$radius: 5px;
+
+//box shadow
+$box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  //applied to all drop shadows
