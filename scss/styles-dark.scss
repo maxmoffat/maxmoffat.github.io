@@ -241,23 +241,29 @@ a:hover{
     li{
       display:inline;
 
+      a.learn-more-button{
+          color:#fff;
+          background-color:$alt-color;
+          font-weight:400;
+          margin-left:20px;
+          margin-top:20px;
+          padding:8px 15px;
+          border-radius:50px;
+      }
+
       a{
         display:inline-block;
-        margin-right:2rem;
-        color:$alt-color;
+        margin-right:1rem;
+        color:$white;
+        background-color:$alt-color;
         text-decoration:none;
-        padding-bottom:2px;
-        border-bottom: 2px solid transparent;
+        padding:8px 15px;
+        border-radius:50px;
         font-weight:bold;
-        @include transition($transition-fast);
       }
 
       a:hover{
-        //text-decoration:underline;
         opacity:0.8;
-        text-decoration:none;
-        padding-bottom:2px;
-        border-bottom:2px solid $alt-color;
       }
 
     }
@@ -272,150 +278,43 @@ footer p{
 //PROJECT WORK STYLES
 
 .project-container{
-  display:grid;
-  //background-color:$lightgray;
-  border-radius:$radius;
-  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-  grid-auto-rows:200px;
-  grid-gap:10px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
   margin:0 20px 20px 20px;
 
   .project-tile{
-    background-color:$lightgray;
-    border-radius:$radius;
-    text-decoration:none;
-    border-bottom:none;
-
-    .project-overlay-1{
-      display:none;
-      background-color:$brand-color;
-      width:100%;
-      height:100%;
-      position:relative;
-      top:0;
-      left:0;
+      background-color:$lightgray;
+      padding-bottom:30px;
       border-radius:$radius;
-      opacity:1;
-      border-bottom:none;
+      margin-top:20px;
 
-      p{
-        color:$white;
-        padding:10px;
-        margin-top:0;
+      h2.project-name{
+        font-weight:bold;
+        font-size:20px;
+        font-family:$font;
+        margin:10px;
+        padding:10px 10px 0px 10px;
       }
-    }
 
-    .project-overlay-2{
-      display:none;
-      background-color:$alt-color;
-      width:100%;
-      height:100%;
-      position:relative;
-      top:0;
-      left:0;
-      border-radius:$radius;
-      opacity:1;
-      border-bottom:none;
-
-      p{
-        color:$white;
-        padding:10px;
-        margin-top:0;
+      span.project-name-emoji{
+          margin-left:5px;
       }
-    }
 
-    .project-overlay-3{
-      display:none;
-      background-color:$purple;
-      width:100%;
-      height:100%;
-      position:relative;
-      top:0;
-      left:0;
-      border-radius:$radius;
-      opacity:1;
-      border-bottom:none;
-
-      p{
-        color:$white;
-        padding:10px;
-        margin-top:0;
+      p.project-description{
+          font-size:12px;
+          margin-bottom:20px;
       }
-    }
 
-    .project-overlay-4{
-      display:none;
-      background-color:$sunflower;
-      width:100%;
-      height:100%;
-      position:relative;
-      top:0;
-      left:0;
-      border-radius:$radius;
-      opacity:1;
-      border-bottom:none;
-
-      p{
-        color:$body-color;
-        padding:10px;
-        margin-top:0;
+      a.learn-more-button{
+          color:#fff;
+          background-color:$alt-color;
+          font-weight:400;
+          margin-left:20px;
+          margin-top:20px;
+          padding:8px 15px;
+          border-radius:50px;
       }
-    }
-
-    .project-overlay-5{
-      display:none;
-      background-color:$red;
-      width:100%;
-      height:100%;
-      position:relative;
-      top:0;
-      left:0;
-      border-radius:$radius;
-      opacity:1;
-      border-bottom:none;
-
-      p{
-        color:$white;
-        padding:10px;
-        margin-top:0;
-      }
-    }
-
-    .project-overlay-6{
-      display:none;
-      background-color:$teal;
-      width:100%;
-      height:100%;
-      position:relative;
-      top:0;
-      left:0;
-      border-radius:$radius;
-      opacity:1;
-      border-bottom:none;
-
-      p{
-        color:$white;
-        padding:10px;
-        margin-top:0;
-      }
-    }
-
-    h3{
-      font-family:$font;
-      color:$body-color;
-      font-size:20px;
-      font-weight:bold;
-      margin:10px;
-      padding:10px 10px 0px 10px;
-      text-align:center;
-    }
-
-    .project-icon{
-      width:40%;
-      height:40%;
-      display:flex;
-      margin:10% auto;
-    }
 
   }
 
@@ -464,6 +363,16 @@ footer p{
 
   .section-content{
     margin-right:20px;
+
+    a.learn-more-button{
+        color:#fff;
+        background-color:$alt-color;
+        font-weight:400;
+        // margin-left:20px;
+        margin-top:20px;
+        padding:8px 15px;
+        border-radius:50px;
+    }
 
     //reducing top margin from first listing
     h2.first-listing{
@@ -526,6 +435,11 @@ footer p{
     }
 
   }
+
+  .certifications a{
+      font-size:12px;
+  }
+
 }
 
 @media only screen and (max-width:700px){
