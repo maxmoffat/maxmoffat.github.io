@@ -26,7 +26,7 @@ body{
     opacity:0.8;
   }
 
-  svg#logo, svg#logo path, svg#logo text{
+  img#white-logo{
     width:80px;
     height:80px;
     margin:20px;
@@ -34,9 +34,8 @@ body{
     fill:$white !important;
   }
 
-  svg#logo rect{
-    color:$white;
-    fill:$white;
+  img#green-logo{
+      display:none;
   }
 
   .hamburger{
