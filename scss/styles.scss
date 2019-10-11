@@ -468,4 +468,21 @@ a:hover{
     margin:auto;
     padding:20px;
   }
+
+  ul{
+      margin-top:0;
+      margin-left:10px;
+      padding-left:15px;
+  }
+
+  li{
+      font-family:$font;
+      color:$body-color;
+      font-size:$body-size;
+      font-weight:normal;
+      line-height:$body-line-height;
+      margin:10px;
+      padding:10px;
+      list-style-type:square;
+  }
 }

@@ -415,3 +415,16 @@ a:hover {
     display: block;
     margin: auto;
     padding: 20px; }
+  .project-details-container ul {
+    margin-top: 0;
+    margin-left: 10px;
+    padding-left: 15px; }
+  .project-details-container li {
+    font-family: "Lato", sans-serif;
+    color: #69707a;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: square; }
