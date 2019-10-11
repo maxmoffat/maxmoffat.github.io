@@ -65,10 +65,10 @@
       <a href="contact.html">Contact Me</a>
 
       <!-- Dark mode switch -->
-      <label class="switch">
+      <!-- <label class="switch">
         <input type="checkbox" id="dark-mode-switch">
         <span class="slider round"></span>
-      </label>
+      </label> -->
 
 
     </div>
@@ -132,35 +132,35 @@
       document.getElementById("overlayMenu").style.width = "0%";
     }
 
-    var dark = "css/styles-dark.css";
-    var light = "css/styles.css";
-
-    function switchLightMode(lightMode){
-      $("#theme").attr("href", lightMode);
-      localStorage.setItem("lightMode", lightMode);
-    }
-
-    //testing dark Mode
-    $("input#dark-mode-switch[type='checkbox']").on("click", function(){
-      if($(this).is(":checked")){
-        switchLightMode(dark);
-        console.log("dark mode is on");
-      } else{
-        switchLightMode(light);
-        console.log("light mode is on");
-      }
-    })
-
-    window.onload = _ =>
-      switchLightMode(
-        localStorage.getItem("lightMode") || "css/styles.css"
-      );
-
-    $(window).on("load", function(){
-      if(localStorage.getItem("lightMode") == dark){
-        $("input#dark-mode-switch[type='checkbox']").attr('checked', 'checked');
-      }
-    });
+    // var dark = "css/styles-dark.css";
+    // var light = "css/styles.css";
+    //
+    // function switchLightMode(lightMode){
+    //   $("#theme").attr("href", lightMode);
+    //   localStorage.setItem("lightMode", lightMode);
+    // }
+    //
+    // //testing dark Mode
+    // $("input#dark-mode-switch[type='checkbox']").on("click", function(){
+    //   if($(this).is(":checked")){
+    //     switchLightMode(dark);
+    //     console.log("dark mode is on");
+    //   } else{
+    //     switchLightMode(light);
+    //     console.log("light mode is on");
+    //   }
+    // })
+    //
+    // window.onload = _ =>
+    //   switchLightMode(
+    //     localStorage.getItem("lightMode") || "css/styles.css"
+    //   );
+    //
+    // $(window).on("load", function(){
+    //   if(localStorage.getItem("lightMode") == dark){
+    //     $("input#dark-mode-switch[type='checkbox']").attr('checked', 'checked');
+    //   }
+    // });
 
 
 
