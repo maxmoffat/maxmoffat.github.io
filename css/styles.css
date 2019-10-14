@@ -428,3 +428,20 @@ a:hover {
     margin: 10px;
     padding: 10px;
     list-style-type: square; }
+  .project-details-container .lead-nurture-email-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 1;
+    justify-content: center; }
+    .project-details-container .lead-nurture-email-row img.lead-nurture-img {
+      width: 200px;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      text-align: center; }
+    .project-details-container .lead-nurture-email-row h3 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 15px; }
