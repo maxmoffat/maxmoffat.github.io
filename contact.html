@@ -44,13 +44,6 @@
       <a href="project-work.html">Project Work</a>
       <a href="experience.html">Experience</a>
       <a href="contact.html">Contact Me</a>
-
-      <!-- Dark mode switch -->
-      <!-- <label class="switch">
-        <input type="checkbox" id="dark-mode-switch">
-        <span class="slider round"></span>
-      </label> -->
-
     </div>
   </div>
 
@@ -80,18 +73,6 @@
 
 <script type="text/javascript">
 
-  //swapping text out every 2 seconds
-  $(function () {
-    count = 0;
-    wordsArray = ["finding new music.", "Elise.", "playing guitar.", "reading fantasy.", "The Legend of Zelda."];
-    setInterval(function () {
-      count++;
-      $("#passion-text").fadeOut(800, function () {
-        $(this).text(wordsArray[count % wordsArray.length]).fadeIn(800);
-      });
-    }, 2000);
-  });
-
   var d = new Date();
   console.log(d);
   document.getElementById("year").innerHTML = d.getFullYear();
@@ -104,54 +85,6 @@
   function closeOverlay(){
     document.getElementById("overlayMenu").style.width = "0%";
   }
-
-  function hidePassionText(vw){
-    if(vw.matches){
-      $("#passion-text-container").hide();
-      //$(".content-links").css("margin", "0");
-      $(".content-links li").hide();
-      $(".divider").hide();
-    } else{
-      $("#passion-text-container").show();
-      $(".content-links li").show();
-      $(".divider").show();
-    }
-  }
-
-  var vw = window.matchMedia("only screen and (max-width: 500px)");
-  hidePassionText(vw);
-  vw.addListener(hidePassionText);
-
-  // var dark = "css/styles-dark.css";
-  // var light = "css/styles.css";
-  //
-  // function switchLightMode(lightMode){
-  //   $("#theme").attr("href", lightMode);
-  //   localStorage.setItem("lightMode", lightMode);
-  // }
-  //
-  // //testing dark Mode
-  // $("input#dark-mode-switch[type='checkbox']").on("click", function(){
-  //   if($(this).is(":checked")){
-  //     switchLightMode(dark);
-  //     console.log("dark mode is on");
-  //   } else{
-  //     switchLightMode(light);
-  //     console.log("light mode is on");
-  //   }
-  // })
-  //
-  // window.onload = _ =>
-  //   switchLightMode(
-  //     localStorage.getItem("lightMode") || "css/styles.css"
-  //   );
-  //
-  // $(window).on("load", function(){
-  //   if(localStorage.getItem("lightMode") == dark){
-  //     $("input#dark-mode-switch[type='checkbox']").attr('checked', 'checked');
-  //   }
-  // });
-
 
 </script>
 
